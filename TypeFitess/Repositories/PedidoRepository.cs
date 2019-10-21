@@ -8,7 +8,7 @@ using TypeFitess.Models;
 
 namespace TypeFitess.Repositories
 {
-   {
+   
     public interface IPedidoRepository
     {
         Task<Pedido> GetPedido();

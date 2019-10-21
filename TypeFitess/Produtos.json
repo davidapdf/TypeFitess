@@ -1,0 +1,43 @@
+[
+  {
+    "Codigo": 1,
+    "Nome": "Musculação",
+    "Preco": 49.90
+  },
+  {
+    "Codigo": 2,
+    "Nome": "Musculação com Aeróbico",
+    "Preco": 69.90
+  },
+  {
+    "Codigo": 3,
+    "Nome": "Lutas",
+    "Preco": 80.00
+  },
+  {
+    "Codigo": 4,
+    "Nome": "Natação",
+    "Preco": 130.00
+  },
+  {
+    "Codigo": 5,
+    "Nome": "1 Luta",
+    "Preco": 59.90
+  },
+  {
+    "Codigo": 6,
+    "Nome": "Aeróbico",
+    "Preco": 39.90
+  },
+  {
+    "Codigo": 7,
+    "Nome": "Pilates",
+    "Preco": 69.90
+  },
+  {
+    "Codigo": 8,
+    "Nome": "Totas as Modalidades",
+    "Preco": 150.00
+  }
+
+]
