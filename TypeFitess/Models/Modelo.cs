@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Threading.Tasks;
 
 namespace TypeFitess.Models
 {
@@ -48,6 +45,9 @@ namespace TypeFitess.Models
         public string Email { get; set; }
         [Required(ErrorMessage = "Telefone é obrigatório")]
         public string Telefone { get; set; }
+
+        public List<Chat> UserRemetente { get; set; } = new List<Chat>();
+        public List<Chat> UserDestinatario { get; set; } = new List<Chat>();
 
         internal void Update(Cadastro novoCadastro)
         {
@@ -100,11 +100,9 @@ namespace TypeFitess.Models
     public class Chat : BaseModel
     {
         [Required]
-        [DataMember]
-        public Cadastro UserRemetente { get; set; }
+        public virtual Cadastro UserRemetente { get; set; }
         [Required]
-        [DataMember]
-        public Cadastro UserDestinatario { get; set; }
+        public virtual Cadastro UserDestinatario { get; set; }
         [Required]
         [DataMember]
         public string Mensagem { get; set; }

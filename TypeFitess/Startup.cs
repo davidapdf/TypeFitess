@@ -21,7 +21,7 @@ namespace TypeFitess
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+          //  services.AddMvc();
             services.AddMvc(option => option.EnableEndpointRouting = false);
             services.AddDistributedMemoryCache();
             services.AddSession();
@@ -33,7 +33,7 @@ namespace TypeFitess
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        [Obsolete]
+        
         public void Configure(IApplicationBuilder app, Microsoft.AspNetCore.Hosting.IHostingEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
