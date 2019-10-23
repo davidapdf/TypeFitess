@@ -18,9 +18,9 @@ namespace TypeFitess.Repositories
             return await dbSet.ToListAsync();
         }
 
-        public async Task SaveProdutos(List<ProdutosInicializer> produtos)
+        public async Task SaveProdutos(List<ProdutosInicializer> prod)
         {
-            foreach (var produto in produtos)
+            foreach (var produto in prod)
             {
                 if (!await dbSet.Where(p => p.Codigo == produto.Codigo).AnyAsync())
                 {
@@ -29,8 +29,6 @@ namespace TypeFitess.Repositories
             }
             await contexto.SaveChangesAsync();
         }
-
-       
     }
 
     public class ProdutosInicializer

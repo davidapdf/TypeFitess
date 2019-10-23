@@ -9,7 +9,7 @@ namespace TypeFitess.Models
     public abstract class BaseModel
     {
         [DataMember]
-        public int Id { get; set; }
+        public int Id { get; protected set; }
     }
 
     public class Produto : BaseModel

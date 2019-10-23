@@ -65,11 +65,6 @@ namespace TypeFitess.Controllers
             return RedirectToAction("Cadastro");
         }
 
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<UpdateQuantidadeResponse> UpdateQuantidade([FromBody]ItemPedido itemPedido)
-        //{
-        //    return await pedidoRepository.UpdateQuantidade(itemPedido);
-        //}
+       
     }
 }
