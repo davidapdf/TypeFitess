@@ -18,16 +18,19 @@ namespace TypeFitess.Repositories
             return await dbSet.ToListAsync();
         }
 
-        public async Task SaveProdutos(List<ProdutosInicializer> prod)
+        public void SaveProdutos(List<ProdutosInicializer> prod)
         {
-            foreach (var produto in prod)
-            {
-                if (!await dbSet.Where(p => p.Codigo == produto.Codigo).AnyAsync())
+
+                foreach (var produto in prod) 
                 {
-                    await dbSet.AddAsync(new Produto(produto.Codigo, produto.Nome, produto.Preco));
+                    if (!dbSet.Where(p => p.Codigo == produto.Codigo).Any())
+                    {
+                         dbSet.Add(new Produto(produto.Codigo, produto.Nome, produto.Preco));
+                    }
                 }
-            }
-            await contexto.SaveChangesAsync();
+
+             contexto.SaveChanges();
+ 
         }
     }
 
