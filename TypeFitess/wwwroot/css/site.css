@@ -45,12 +45,12 @@ textarea {
 
 .navbar-brand {
     background: url('../images/logo.png');
-    width: 100px;
-    height: 89px;
+    width: 78px;
+    height: 70px;
 }
 
 .navbar-inverse {
-    background-color: #f8965d;
+    background-color: #f1eeea;
     border-color: white;
 }
 
