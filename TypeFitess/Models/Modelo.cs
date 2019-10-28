@@ -43,11 +43,11 @@ namespace TypeFitess.Models
         [MinLength(5, ErrorMessage = "Nome deve ter no mínimo 5 caracteres")]
         [MaxLength(50, ErrorMessage = "Nome deve ter no máximo 50 caracteres")]
         [Required(ErrorMessage = "Nome é obrigatório")]
-        public string Nome { get; set; }
+        public string Nome { get; set; } = "";
         [Required(ErrorMessage = "Email é obrigatório")]
-        public string Email { get; set; }
+        public string Email { get; set; } = "";
         [Required(ErrorMessage = "Telefone é obrigatório")]
-        public string Telefone { get; set; }
+        public string Telefone { get; set; } = "";
 
         public List<Chat> ChatRemetente { get; set; } = new List<Chat>();
         public List<Chat> ChatDestinatario { get; set; } = new List<Chat>();
@@ -104,7 +104,6 @@ namespace TypeFitess.Models
 
         public List<ItemPedido> Itens { get; private set; } = new List<ItemPedido>();
         [Required]
-        [DataMember]
         public virtual Cadastro Cadastro { get; private set; }
         public int CadastroId { get; set; }
     }

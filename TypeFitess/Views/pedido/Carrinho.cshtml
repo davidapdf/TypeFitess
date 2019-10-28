@@ -3,7 +3,7 @@
 }
 @model TypeFitess.Models.ViewModels.CarrinhoViewModel;
 
-<h3>Meu Carrinho</h3>
+@*<h3>Meu Carrinho</h3>*@
 
 <form method="post" asp-action="carrinho">
 </form>
@@ -19,9 +19,9 @@
             <div class="col-md-2 text-center">
                 Preço Unitário
             </div>
-            <div class="col-md-2 text-center">
+            @*<div class="col-md-2 text-center">
                 Quantidade
-            </div>
+            </div>*@
             <div class="col-md-2">
                 <span class="pull-right">
                     Subtotal
@@ -41,18 +41,18 @@
                 <div class="col-md-3">@(item.Produto.Nome)</div>
                 <div class="col-md-2 text-center">
                     <div class="input-group">
-                        <span class="input-group-btn">
+                        @*<span class="input-group-btn">
                             <button class="btn btn-default"
                                     onclick="carrinho.clickDecremento(this)">
                                 <span class="glyphicon-minus"></span>
                             </button>
-                        </span>
-                        <span class="input-group-btn">
+                        </span>*@
+                        @*<span class="input-group-btn">
                             <button class="btn btn-default"
                                     onclick="carrinho.clickIncremento(this)">
                                 <span class="glyphicon-plus"></span>
                             </button>
-                        </span>
+                        </span>*@
                     </div>
                 </div>
                 

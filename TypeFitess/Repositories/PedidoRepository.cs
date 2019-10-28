@@ -74,8 +74,8 @@ namespace TypeFitess.Repositories
 
             if (pedido == null)
             {
-                pedido = new Pedido();
-                dbSet.Add(pedido);
+                pedido =  new Pedido();
+                 dbSet.Add(pedido);
                 await contexto.SaveChangesAsync();
                 SetPedidoId(pedido.Id);
             }
