@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,22 +20,56 @@
 </head>
 <body>
 
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="tablist" id="nav-tab">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
                 <a asp-area="" asp-controller="Pedido" asp-action="Carrossel" class="navbar-brand"></a>
             </div>
-            <div class="navbar-collapse collapse">
-            </div>
+            <hr class="hr-danger" />
+            <ol class="breadcrumb bread-danger">
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Endereços</a></li>
+            </ol>
         </div>
     </nav>
+
+    @*<div class="row">
+            <hr class="hr-danger" />
+            <ol class="breadcrumb bread-danger">
+                <li><a href="#">CELEBRITY</a></li>
+                <li><a href="#">MOVIES</a></li>
+                <li class="active">MUSIC</li>
+            </ol>
+        </div>*@
+
+    @*<nav class="navbar navbar-inverse navbar-fixed-top" role="tablist" id="nav-tab">
+            <span class="navbar-toggler-icon menutrigger"></span>
+            <a asp-area="" asp-controller="Pedido" asp-action="Carrossel" class="navbar-brand"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav animate side-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Endereços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fale com nosco</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>*@
+
+
+
+
     <div class="container body-content">
         @RenderBody()
         <hr />

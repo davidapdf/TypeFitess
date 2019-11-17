@@ -26,6 +26,7 @@ namespace TypeFitess
             services.AddDistributedMemoryCache();
             services.AddHttpContextAccessor();
             services.AddSession();
+            
             string connectionString = Configuration.GetConnectionString("Default");
             services.AddDbContext<ApplicationContext>(options =>
                 options.UseSqlServer(connectionString)
@@ -42,6 +43,8 @@ namespace TypeFitess
         
         public void Configure(IApplicationBuilder app, IHostEnvironment env, IServiceProvider serviceProvider)
         {
+           
+
             if (env.IsDevelopment())
             {
                 app.UseBrowserLink();
@@ -57,7 +60,7 @@ namespace TypeFitess
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseSession();
-
+            
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
