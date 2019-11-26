@@ -65,6 +65,9 @@ namespace TypeFitess.Controllers
             return RedirectToAction("Cadastro");
         }
 
-       
+        public ActionResult QuemSomos()
+        {
+            return View();
+        }
     }
 }
