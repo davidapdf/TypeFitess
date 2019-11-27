@@ -19,18 +19,18 @@ textarea {
 
 /* Carousel */
 .carousel-caption p {
-    font-size: 10px;
-    line-height: 1;
+    font-size: 20px;
+    line-height: 1.4;
 }
+
 
 /* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img[src$=".svg"] {
-    width: 50%;
-    transition: 0.6s ease-in-out left;
+    width: 100%;
 }
 
 /* Hide/rearrange for smaller screens */
-@media screen and (max-width: 50px) {
+@media screen and (max-width: 767px) {
     /* Hide captions */
     .carousel-caption {
         display: none;
@@ -40,18 +40,18 @@ textarea {
 .left.carousel-control,
 .right.carousel-control {
     background-image: none;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .navbar-brand {
     background: url('../images/logo.png');
-    width: 78px;
-    height: 70px;
+    width: 215px;
+    height: 55px;
 }
 
 .navbar-inverse {
-    background-color: #f1eeea;
+    background-color: #f8965d;
     border-color: white;
 }
 
@@ -79,6 +79,7 @@ textarea {
     text-overflow: ellipsis;
 }
 
+
 .produto-footer {
     max-height: 140px;
 }
@@ -86,34 +87,4 @@ textarea {
 .produto-nome {
 }
 
-.breadcrumb {
-    background: rgba(245, 245, 245, 0);
-}
-.how-section1 {
-    margin-top: -15%;
-    padding: 10%;
-}
-
-    .how-section1 h4 {
-        color: #ffa500;
-        font-weight: bold;
-        font-size: 30px;
-    }
-
-    .how-section1 .subheading {
-        color: #3931af;
-        font-size: 20px;
-    }
-
-    .how-section1 .row {
-        margin-top: 10%;
-    }
-
-.how-img {
-    text-align: center;
-}
-
-    .how-img img {
-        width: 40%;
-    }
 
